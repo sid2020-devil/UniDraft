@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Login Form</title>
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        {% load static %}
-        <link rel="stylesheet" href="{% static '/css/style.css' %}">
-
     </head>
     <body>
+        <section class="header">   
         <div class="login-box">
             <h1>Login</h1>
             <form>
@@ -19,6 +18,8 @@
                 <input type="button" value="Submit">
             </form>
         </div>
-        <p class="para-2">Not have an account? <a href="{% url 'signup' %}">Sign Up Here</a></p>
+        <p class="para-2">Not have an account? <a href="signup.html">Sign Up Here</a></p>
+        </section>
+        <!--<p class="para-2">Not have an account? <a href="signup.html">Sign Up Here</a></p>-->
     </body>
 </html>
