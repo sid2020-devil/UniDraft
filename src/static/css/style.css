@@ -142,7 +142,7 @@ p{
 /****about page styling starts********/
 .about-header{
     min-height: 100vh;
-    width: 100%;
+    width: 103%;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -150,12 +150,12 @@ p{
 .about-header h1{
     text-align: center;
     padding-top: 50px;
-    padding-left: 20px;
+    padding-left:20px;
     font-size: 60px;
     color: white;
 }
 .slider{
-    max-width: 700px;
+    max-width: 800px;
     border: 10px solid #29a8e2;
     margin: 80px auto;
     position: relative;
@@ -200,7 +200,7 @@ p{
     display: none;
     position: relative;
 }
-.slider .slider-items .item .caption{
+/*.slider .slider-items .item .caption{
     position: absolute;
     width: 100%;
     height: 60px;
@@ -211,11 +211,50 @@ p{
     text-align: center;
     color: #ffffff;
     font-size: 30px;
-}
+}*/
 .slider .slider-items .item.active{
     display: block;
 }
-
+.about-main{
+    background-color: white;
+}
+.about-main h1{
+    text-align: center;
+    font-size: 50px;
+}
+.about-us{
+    width: 105%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-color: white;
+    height: 750px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.about-col img{
+    width: 40%;
+    height: 450px;
+    float: right;
+    margin-right: 60px;
+    margin-top: -300px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+.about-col h1{
+    padding: 0;
+    padding-left: 100px;
+    font-size: 50px;
+}
+.about-col p{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-left: -700px;
+    font-size: 20px;
+}
 /***********navbar styling starts*************/
 .navbar-header{
     min-height: 100vh;
@@ -236,7 +275,7 @@ nav{
     background-color: white;
 }
 nav img{
-    width: 100px;
+    width: 80px;
     padding-top: 20px;
 }
 .nav-links{
