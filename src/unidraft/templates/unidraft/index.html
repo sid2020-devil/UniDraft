@@ -6,14 +6,53 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <section class="home-header">
-            <h1>Kerala's One Of The Biggest College</h1>
+            <h1>Kerala's One Of The Finest College</h1>
             <p>Come, learn and create a successful carrer from our college</p>
+            <div class="text-box">
+                <a  href="" class="hero-btn">Check Out Our Events</a>
+            </div>
         </section>
-        <div class="text-box">
-            <a  href="" class="hero-btn">Visit Us To Know More</a>
-        </div>
+        <!-------------events section----------------->
+        <section class="home">
+            <h1>Professional Body Events</h1>
+            <div class="row">
+                <div class="home-col">
+                    <button id="btnScrollToTop">
+                        <i class="material-icons">arrow_upward</i>
+                    </button>
+                    <script>
+                        const btnScrollToTop = document.querySelector("#btnScrollToTop");
+                        btnScrollToTop.addEventListener("click" , function () {
+                            window.scrollTo({
+                                top: 50,
+                                left: 0,
+                                behavior: "smooth"
+                            });
+
+                        });
+                    </script>
+                </div>            
+            </div>
+            <section class="container">
+                <div class="card1">
+                    <div class="card-image car1"><img src="images/iedc2.jpg"></div>
+                    <button  type="button" class="iedc-btn">IEDC EVENTS</button>
+                </div>
+                <div class="card2">
+                    <div class="card-image car2"><img src="images/csi4.jpg"></div>
+                    <button  type="button" class="csi-btn">CSI EVENTS</button>
+                </div>
+                <div class="card3">
+                    <div class="card-image car3"><img src="images/ieee2.jpg"></div>
+                    <button  type="button" class="ieee-btn">IEEE EVENTS</button>
+                </div>
+            </section>
+        </section>
     </body>
 </html>

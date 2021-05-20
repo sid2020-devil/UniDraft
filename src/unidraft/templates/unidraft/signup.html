@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Sign Up Form</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login Form</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     </head>
     <body>
-         <div class="signup-box">
+        <section class="signup-header">
+        <div class="signup-form">
+            <img src="images/user-icon.png">
             <h1>Sign Up</h1>
-            <h4>Its  Free For All</h4>
-            <form>
-                <label>First Name</label>
-                <input type="text" placeholder="">
-                <label>Last Name</label>
-                <input type="text" placeholder="">
-                <label>Email</label>
-                <input type="email" placeholder="">
-                <label>Password</label>
-                <input type="password" placeholder="">
-                <label>Confirm Password</label>
-                <input type="password" placeholder="">
-                <input type="button" value="Submit">
+             <form>
+                <input type="name" class="input-box" placeholder="Your Name">
+                <input type="email" class="input-box" placeholder="Your Email">
+                <input type="password" class="input-box" placeholder="Password">
+                <input type="password" class="input-box" placeholder="Confirm Password">
+                <p><span><input type="checkbox"></span>I agree to the terms of services</p>
+                <button type="button" class="signup-btn">Sign up</button>
+                <hr>
+                <p class="or">OR</p>
+                <button type="button" class="google-btn"><i class="fab fa-google"></i>Sign up  with Google</button>
+                <p class="para-2">Have an account? <a href="signup.html">Sign in</a></p>
             </form>
-            <p>By clicking the Sign Up button, you agree to our <br>
-            <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
-            </p>
         </div>
-        <p class="para-1"><b> Already have an account? </b> <a href="login.html"> <b> Login here </b></a></p>
+        </section>
     </body>
 </html>
