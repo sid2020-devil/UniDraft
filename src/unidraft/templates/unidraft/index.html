@@ -15,11 +15,15 @@
             <h1>Kerala's One Of The Finest College</h1>
             <p>Come, learn and create a successful carrer from our college</p>
             <div class="text-box">
-                <a  href="" class="hero-btn">Check Out Our Events</a>
+                <a href="#home">
+                    <div class="scroll-down">
+                        <p>Check Out Our Events</p>
+                    </div>
+                </a>
             </div>
         </section>
         <!-------------events section----------------->
-        <section class="home">
+        <section class="home" id="home">
             <h1>Professional Body Events</h1>
             <div class="row">
                 <div class="home-col">
@@ -30,7 +34,7 @@
                         const btnScrollToTop = document.querySelector("#btnScrollToTop");
                         btnScrollToTop.addEventListener("click" , function () {
                             window.scrollTo({
-                                top: 50,
+                                top: 100,
                                 left: 0,
                                 behavior: "smooth"
                             });
@@ -52,6 +56,19 @@
                     <div class="card-image car3"><img src="images/ieee2.jpg"></div>
                     <button  type="button" class="ieee-btn">IEEE EVENTS</button>
                 </div>
+            </section>
+            <section class="home-2">
+                <h1>Other Events</h1>
+                <section class="container">
+                    <div class="card4">
+                        <div class="card-image car4"><img src="images/tharang.jpg"></div>
+                        <button  type="button" class="feast-btn"> FEAST</button>
+                    </div>
+                    <div class="card5">
+                        <div class="card-image car5"><img src="images/workshops.jpg"></div>
+                        <button  type="button" class="workshop-btn">TECH TALKS/WORKSHOPS</button>
+                    </div>
+                </section>
             </section>
         </section>
     </body>
