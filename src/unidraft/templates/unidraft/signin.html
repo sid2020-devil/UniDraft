@@ -1,16 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Sign Up Form</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
+
         <div class="signin-form">
-            <img src="images/user-icon.png">
+            <img src="{% static '/images/user-icon.png' %}">
             <h1>Sign In</h1>
             <form>
                 <input type="email" class="input-box" placeholder="Your Email">

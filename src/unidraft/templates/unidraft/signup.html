@@ -1,18 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Login Form</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     </head>
     <body>
+      
         <section class="signup-header">
         <div class="signup-form">
-            <img src="images/user-icon.png">
+            <img src="{% static '/images/user-icon.png' %}">
             <h1>Sign Up</h1>
              <form>
                 <input type="name" class="input-box" placeholder="Your Name">
@@ -27,6 +29,16 @@
                 <p class="para-2">Have an account? <a href="signup.html">Sign in</a></p>
             </form>
         </div>
+        </section>
+                <section class="footer">
+            <h4>Contact Us</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>Made with  <i class="far fa-heart"></i>  by Unicorndev</p>
         </section>
     </body>
 </html>

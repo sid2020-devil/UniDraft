@@ -1,28 +1,39 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav>
+            <img src="{% static '/images/logo.png' %}">
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><button class="login-btn">LOGIN</button></li>
+                </ul>
+             </div>
+         </nav>
         <section class="home-header">
             <h1>Kerala's One Of The Finest College</h1>
             <p>Come, learn and create a successful carrer from our college</p>
-            <div class="text-box">
+            <!-- <div class="text-box">
                 <a href="#home">
                     <div class="scroll-down">
                         <p>Check Out Our Events</p>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </section>
-        <!-------------events section----------------->
         <section class="home" id="home">
             <h1>Professional Body Events</h1>
             <div class="row">
@@ -45,15 +56,15 @@
             </div>
             <section class="container">
                 <div class="card1">
-                    <div class="card-image car1"><img src="images/iedc2.jpg"></div>
+                    <div class="card-image car1"><img src="{% static '/images/iedc2.jpg' %}"></div>
                     <button  type="button" class="iedc-btn">IEDC EVENTS</button>
                 </div>
                 <div class="card2">
-                    <div class="card-image car2"><img src="images/csi4.jpg"></div>
+                    <div class="card-image car2"><img src="{% static '/images/csi4.jpg' %}"></div>
                     <button  type="button" class="csi-btn">CSI EVENTS</button>
                 </div>
                 <div class="card3">
-                    <div class="card-image car3"><img src="images/ieee2.jpg"></div>
+                    <div class="card-image car3"><img src="{% static '/images/ieee2.jpg' %}"></div>
                     <button  type="button" class="ieee-btn">IEEE EVENTS</button>
                 </div>
             </section>
@@ -61,15 +72,18 @@
                 <h1>Other Events</h1>
                 <section class="container">
                     <div class="card4">
-                        <div class="card-image car4"><img src="images/tharang.jpg"></div>
+                        <div class="card-image car4"><img src="{% static '/images/tharang.jpg' %}"></div>
                         <button  type="button" class="feast-btn"> FEAST</button>
                     </div>
                     <div class="card5">
-                        <div class="card-image car5"><img src="images/workshops.jpg"></div>
-                        <button  type="button" class="workshop-btn">TECH TALKS/WORKSHOPS</button>
+                        <div class="card-image car5"><img src="{% static '/images/workshops.jpg' %}"></div>
+                        <button  type="button" class="workshop-btn"> TECH TALKS/WORKSHOPS </button>
                     </div>
+
                 </section>
             </section>
         </section>
     </body>
+
 </html>
+
